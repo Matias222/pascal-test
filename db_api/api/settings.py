@@ -43,12 +43,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'corsheaders',
     'db_api',
     'proyectos'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # Debe ir antes de CommonMiddleware
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -56,6 +59,13 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# CORS Configuration
+CORS_ALLOW_ALL_ORIGINS = True  # Para desarrollo/testing, permite todos los orígenes
+CORS_ALLOW_CREDENTIALS = True
+
+# CSRF Exemptions for API endpoints
+CSRF_TRUSTED_ORIGINS = ['https://*.awsapprunner.com', 'http://localhost:8000']
 
 ROOT_URLCONF = 'api.urls'
 
