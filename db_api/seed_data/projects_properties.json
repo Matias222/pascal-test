@@ -1,0 +1,489 @@
+{
+  "projects": [
+    {
+      "name": "Altos de Miraflores",
+      "description": "Exclusivo proyecto residencial en el corazón de Miraflores con vista al mar y al parque Kennedy. Edificio boutique de solo 24 departamentos con acabados premium, pisos de porcelanato importado y terrazas con parrilla.",
+      "district": "Miraflores",
+      "address": "Av. Larco 1250",
+      "reference": "A 2 cuadras del Parque Kennedy",
+      "details": "Amenities: piscina infinita en rooftop, sky bar, gimnasio equipado, sala de cine, coworking space, pet wash station. Seguridad 24/7 con circuito cerrado. Estacionamientos techados con cargadores para autos eléctricos.",
+      "video_url": "https://youtube.com/altos-miraflores",
+      "brochure_url": "https://brochure.com/altos-miraflores.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Depto 301 - Vista al Mar", "type": "departamento", "description": "Amplio departamento con vista panorámica al océano Pacífico, 3 dormitorios con baño propio, sala-comedor integrada con terraza de 15m2", "pricing": 450000, "view_type": "mar", "floor_no": "3"},
+        {"title": "Depto 601 - Penthouse", "type": "departamento", "description": "Penthouse dúplex con terraza privada de 80m2, jacuzzi, parrilla y vista 360°. 4 dormitorios, walk-in closet, cocina italiana", "pricing": 780000, "view_type": "panoramica", "floor_no": "6"},
+        {"title": "Depto 201 - Flat Moderno", "type": "departamento", "description": "Flat de 2 dormitorios ideal para pareja joven, balcón con vista al parque, cocina americana equipada", "pricing": 320000, "view_type": "parque", "floor_no": "2"}
+      ]
+    },
+    {
+      "name": "Residencial Los Jardines",
+      "description": "Proyecto familiar en Los Olivos con amplias áreas verdes, parques infantiles y espacios de integración comunitaria. Ideal para familias que buscan tranquilidad y seguridad.",
+      "district": "Los Olivos",
+      "address": "Av. Alfredo Mendiola 5800",
+      "reference": "Frente al Mega Plaza",
+      "details": "Conjunto residencial de 8 torres con 320 departamentos. Incluye área de juegos para niños, cancha de grass sintético, zona de parrillas, salón comunal para eventos. Vigilancia privada las 24 horas.",
+      "video_url": "https://youtube.com/residencial-jardines",
+      "brochure_url": "https://brochure.com/jardines.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Depto Torre A - 405", "type": "departamento", "description": "Departamento familiar de 3 dormitorios con vista a áreas verdes, balcón amplio, cocina con reposteros de melamine", "pricing": 185000, "view_type": "jardines", "floor_no": "4"},
+        {"title": "Depto Torre B - 102", "type": "departamento", "description": "Primer piso con patio privado de 20m2, perfecto para mascotas, 2 dormitorios más estudio", "pricing": 195000, "view_type": "patio", "floor_no": "1"},
+        {"title": "Depto Torre C - 801", "type": "departamento", "description": "Último piso con mayor altura de techo (2.80m), 3 dormitorios, doble estacionamiento", "pricing": 210000, "view_type": "ciudad", "floor_no": "8"}
+      ]
+    },
+    {
+      "name": "Casas del Golf",
+      "description": "Exclusivas casas adosadas en La Molina con diseño contemporáneo, frente al Club de Golf Los Inkas. Proyecto de solo 12 unidades con arquitectura moderna y espacios amplios.",
+      "district": "La Molina",
+      "address": "Av. Raúl Ferrero 1500",
+      "reference": "Al costado del Club de Golf Los Inkas",
+      "details": "Casas de 3 y 4 pisos con ascensor privado, terrazas en cada nivel, jardín privado, cochera para 3 autos. Acabados de lujo: pisos de madera, mármol en baños, cocina italiana Scavolini.",
+      "video_url": "https://youtube.com/casas-golf",
+      "brochure_url": "https://brochure.com/casas-golf.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Casa 1 - Modelo Premium", "type": "casa", "description": "Casa de 4 pisos, 380m2 construidos, 5 dormitorios con baño propio, sala de TV, family room, terraza con vista al golf, jardín de 80m2", "pricing": 1200000, "view_type": "golf", "floor_no": "N/A"},
+        {"title": "Casa 5 - Modelo Ejecutivo", "type": "casa", "description": "Casa de 3 pisos, 280m2, 4 dormitorios, estudio, sala-comedor, terraza BBQ, jardín 60m2", "pricing": 850000, "view_type": "parque", "floor_no": "N/A"}
+      ]
+    },
+    {
+      "name": "Torre Central San Isidro",
+      "description": "Edificio corporativo con departamentos tipo loft y oficinas en el centro financiero de San Isidro. Diseño minimalista perfecto para ejecutivos y profesionales.",
+      "district": "San Isidro",
+      "address": "Av. Conquistadores 560",
+      "reference": "A media cuadra del Golf de San Isidro",
+      "details": "Edificio inteligente con domótica, aire acondicionado central, lobby de doble altura con conserjería. Piso 15 exclusivo para coworking, salas de reuniones y business center.",
+      "video_url": "https://youtube.com/torre-central",
+      "brochure_url": "https://brochure.com/torre-central.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Loft 1205 - Ejecutivo", "type": "loft", "description": "Loft de 85m2 con diseño industrial, techos altos, ventanales piso-techo, 1 dormitorio, ideal para home office", "pricing": 380000, "view_type": "ciudad", "floor_no": "12"},
+        {"title": "Oficina 801", "type": "oficina", "description": "Oficina de 120m2, planta libre para diseño personalizado, 2 baños, kitchenette", "pricing": 450000, "view_type": "golf", "floor_no": "8"}
+      ]
+    },
+    {
+      "name": "Quinta Las Palmeras",
+      "description": "Tradicional quinta en Barranco con arquitectura republicana restaurada. Solo 8 casas con patios internos y estilo vintage único. Perfecto para amantes del arte y la cultura.",
+      "district": "Barranco",
+      "address": "Jr. Centenario 250",
+      "reference": "A 3 cuadras del Puente de los Suspiros",
+      "details": "Quinta de principios del siglo XX completamente renovada respetando su arquitectura original. Pisos de madera restaurados, techos altos con vigas de madera, patios con jardines internos.",
+      "video_url": "https://youtube.com/quinta-palmeras",
+      "brochure_url": "https://brochure.com/quinta-palmeras.pdf",
+      "includes_parking": false,
+      "has_showroom": false,
+      "properties": [
+        {"title": "Casa 3 - Estilo Colonial", "type": "casa", "description": "Casa de 2 pisos, 3 dormitorios, patio interno de 30m2 con fuente colonial, techos de 4 metros, balcón republicano", "pricing": 420000, "view_type": "patio", "floor_no": "N/A"},
+        {"title": "Casa 7 - Artista", "type": "casa", "description": "Casa de 1 piso con altillo, 2 dormitorios, taller/estudio con luz natural, jardín bohemio", "pricing": 350000, "view_type": "jardin", "floor_no": "N/A"}
+      ]
+    },
+    {
+      "name": "Edificio Vista Mar - Magdalena",
+      "description": "Departamentos económicos frente al mar en Magdalena del Mar. Proyecto accesible para primera vivienda con financiamiento directo.",
+      "district": "Magdalena del Mar",
+      "address": "Av. Costanera 1800",
+      "reference": "Malecón frente al mar",
+      "details": "Edificio de 10 pisos con 60 departamentos. Áreas comunes: terraza con vista al mar, zona de parrillas, juegos para niños. Bono Mivivienda disponible.",
+      "video_url": "https://youtube.com/vista-mar",
+      "brochure_url": "https://brochure.com/vista-mar.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Depto 304 - Frente al Mar", "type": "departamento", "description": "Departamento de 2 dormitorios con balcón y vista directa al mar, sala-comedor, 1 baño completo", "pricing": 165000, "view_type": "mar", "floor_no": "3"},
+        {"title": "Depto 507 - Esquina", "type": "departamento", "description": "Departamento esquinero de 3 dormitorios, más iluminado, 2 baños, balcón corrido", "pricing": 195000, "view_type": "mar_ciudad", "floor_no": "5"}
+      ]
+    },
+    {
+      "name": "Condominio Parque Norte",
+      "description": "Amplio condominio en Comas con casas de 2 y 3 pisos. Proyecto popular con facilidades de pago y subsidio Techo Propio.",
+      "district": "Comas",
+      "address": "Av. Túpac Amaru Km 12",
+      "reference": "Al costado del Hospital Collique",
+      "details": "Condominio cerrado con 150 casas, parque central de 2000m2, losa deportiva, zona de juegos. Seguridad con garita de control. Casas con opción de ampliación vertical.",
+      "video_url": "https://youtube.com/parque-norte",
+      "brochure_url": "https://brochure.com/parque-norte.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Casa Modelo A - 2 Pisos", "type": "casa", "description": "Casa de 2 pisos, 90m2, 3 dormitorios, 2 baños, patio de 30m2, cochera techada", "pricing": 120000, "view_type": "parque", "floor_no": "N/A"},
+        {"title": "Casa Modelo B - Ampliable", "type": "casa", "description": "Casa de 2 pisos con estructura para 3er piso, 100m2, 3 dormitorios, patio grande de 50m2", "pricing": 135000, "view_type": "calle", "floor_no": "N/A"}
+      ]
+    },
+    {
+      "name": "Lomas de Carabayllo",
+      "description": "Proyecto de vivienda social en Carabayllo con terrenos desde 90m2. Ideal para construcción progresiva y familias que buscan su primera propiedad.",
+      "district": "Carabayllo",
+      "address": "Av. Lomas de Carabayllo s/n",
+      "reference": "Sector Las Lomas, Zona Alta",
+      "details": "Lotización de 200 lotes con servicios básicos: agua, luz, desagüe. Pistas y veredas proyectadas. Parque comunal y losa deportiva. Financiamiento directo hasta 10 años.",
+      "video_url": "https://youtube.com/lomas-carabayllo",
+      "brochure_url": "https://brochure.com/lomas.pdf",
+      "includes_parking": false,
+      "has_showroom": false,
+      "properties": [
+        {"title": "Lote 45 - 90m2", "type": "terreno", "description": "Terreno plano de 90m2, esquina, con factibilidad de servicios", "pricing": 45000, "view_type": "calle", "floor_no": "N/A"},
+        {"title": "Lote 102 - 120m2", "type": "terreno", "description": "Terreno de 120m2 con vista a parque comunal, forma regular", "pricing": 58000, "view_type": "parque", "floor_no": "N/A"}
+      ]
+    },
+    {
+      "name": "Playa del Sol - Asia",
+      "description": "Exclusivas casas de playa en el balneario de Asia. Diseño moderno con piscina privada y acceso directo al mar. Ideal para verano y retiro.",
+      "district": "Asia",
+      "address": "Km 97.5 Panamericana Sur",
+      "reference": "Boulevard de Asia, sector Los Corales",
+      "details": "Condominio cerrado frente al mar con 30 casas de lujo. Club house con piscina olímpica, cancha de tenis, restaurante. Acceso privado a la playa. Seguridad 24/7.",
+      "video_url": "https://youtube.com/playa-sol",
+      "brochure_url": "https://brochure.com/playa-sol.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Casa Frente al Mar 5", "type": "casa_playa", "description": "Casa de 3 pisos con piscina infinity, 5 dormitorios con baño, terraza en rooftop, acceso directo a playa, 400m2 construidos", "pricing": 1800000, "view_type": "mar", "floor_no": "N/A"},
+        {"title": "Casa Segunda Fila 12", "type": "casa_playa", "description": "Casa de 2 pisos, 4 dormitorios, piscina, quincho, vista parcial al mar, 280m2", "pricing": 950000, "view_type": "parcial_mar", "floor_no": "N/A"}
+      ]
+    },
+    {
+      "name": "Edificio Smart Living",
+      "description": "Edificio inteligente en Surco con tecnología domótica, paneles solares y espacios eco-friendly. Certificación LEED.",
+      "district": "Santiago de Surco",
+      "address": "Av. Primavera 1250",
+      "reference": "Frente al Óvalo Higuereta",
+      "details": "Edificio sostenible con paneles solares, sistema de reciclaje de aguas grises, jardines verticales. Cada depto con domótica para control de luces, temperatura y seguridad desde el celular.",
+      "video_url": "https://youtube.com/smart-living",
+      "brochure_url": "https://brochure.com/smart.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Eco Depto 702", "type": "departamento", "description": "Departamento ecológico de 2 dormitorios con balcón verde, sistema de domótica completo, iluminación LED automática", "pricing": 280000, "view_type": "ciudad", "floor_no": "7"},
+        {"title": "Green Loft 1004", "type": "loft", "description": "Loft de 1 dormitorio con terraza verde de 25m2, huerto urbano incluido, paneles solares individuales", "pricing": 240000, "view_type": "terraza", "floor_no": "10"}
+      ]
+    },
+    {
+      "name": "Residencial Universitaria",
+      "description": "Departamentos tipo studio cerca a universidades en Pueblo Libre. Diseñados para estudiantes y jóvenes profesionales.",
+      "district": "Pueblo Libre",
+      "address": "Av. Universitaria 1850",
+      "reference": "Entre PUCP y UNI",
+      "details": "Edificio de 8 pisos con 80 estudios amoblados. Incluye lavandería comunal, sala de estudio 24/7, coworking, cafetería. Internet de alta velocidad incluido.",
+      "video_url": "https://youtube.com/universitaria",
+      "brochure_url": "https://brochure.com/universitaria.pdf",
+      "includes_parking": false,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Studio 305 - Amoblado", "type": "studio", "description": "Studio de 28m2 completamente amoblado, kitchenette, baño completo, escritorio integrado", "pricing": 95000, "view_type": "calle", "floor_no": "3"},
+        {"title": "Studio 601 - Doble", "type": "studio", "description": "Studio más amplio de 35m2, para 2 personas, 2 camas, área de estudio compartida", "pricing": 110000, "view_type": "ciudad", "floor_no": "6"}
+      ]
+    },
+    {
+      "name": "Torres de Jesús María",
+      "description": "Proyecto de usos mixtos en Jesús María con departamentos, oficinas y locales comerciales. Ubicación estratégica cerca al Centro de Lima.",
+      "district": "Jesús María",
+      "address": "Av. Salaverry 2450",
+      "reference": "Frente al Campo de Marte",
+      "details": "Complejo de 2 torres: Torre Residencial (15 pisos) y Torre Corporativa (12 pisos). Planta baja con comercio: restaurantes, farmacias, supermercado. Estacionamientos en sótanos.",
+      "video_url": "https://youtube.com/torres-jm",
+      "brochure_url": "https://brochure.com/torres-jm.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Depto Residencial 905", "type": "departamento", "description": "Departamento de 3 dormitorios con vista al Campo de Marte, balcón amplio, acabados modernos", "pricing": 310000, "view_type": "parque", "floor_no": "9"},
+        {"title": "Oficina Torre B 704", "type": "oficina", "description": "Oficina de 80m2, 2 ambientes, kitchenette, baño privado, ideal para consultorio o estudio", "pricing": 220000, "view_type": "ciudad", "floor_no": "7"},
+        {"title": "Local Comercial LC-05", "type": "local_comercial", "description": "Local de 60m2 con frente a Av. Salaverry, altura 4m, baño, depósito", "pricing": 180000, "view_type": "avenida", "floor_no": "1"}
+      ]
+    },
+    {
+      "name": "Alameda de Monterrico",
+      "description": "Conjunto residencial premium en Monterrico con áreas verdes extensas, canchas deportivas y club house. Exclusividad y seguridad.",
+      "district": "Santiago de Surco",
+      "address": "Av. Javier Prado Este 7200",
+      "reference": "Cruce con Av. Primavera, sector Monterrico",
+      "details": "Condominio horizontal de 5 hectáreas con 80 casas. Club house con piscina semi-olímpica, gimnasio, sauna, cancha de tenis, squash, fútbol 7. Parques temáticos para niños.",
+      "video_url": "https://youtube.com/alameda-monterrico",
+      "brochure_url": "https://brochure.com/alameda.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Casa Premium 15", "type": "casa", "description": "Casa de 3 pisos, 450m2, 5 dormitorios con walk-in closet, sala de TV, terraza BBQ, jardín de 150m2, piscina", "pricing": 1500000, "view_type": "jardin", "floor_no": "N/A"},
+        {"title": "Casa Tradicional 42", "type": "casa", "description": "Casa de 2 pisos, 320m2, 4 dormitorios, estudio, sala-comedor, jardín 100m2", "pricing": 980000, "view_type": "parque", "floor_no": "N/A"}
+      ]
+    },
+    {
+      "name": "Sky Towers",
+      "description": "Las torres gemelas más altas de San Miguel con vista panorámica a Lima. Diseño arquitectónico de vanguardia.",
+      "district": "San Miguel",
+      "address": "Av. La Marina 2000",
+      "reference": "Al lado del Centro Comercial Plaza San Miguel",
+      "details": "Torres gemelas de 28 pisos cada una. Rooftop con infinity pool, sky lounge, mirador 360°. Lobby con triple altura, spa, cine privado. Helipuerto en torre A.",
+      "video_url": "https://youtube.com/sky-towers",
+      "brochure_url": "https://brochure.com/sky-towers.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Sky Depto Torre A - 2205", "type": "departamento", "description": "Departamento de 3 dormitorios en piso 22 con vista panorámica al mar y ciudad, doble altura en sala", "pricing": 520000, "view_type": "panoramica", "floor_no": "22"},
+        {"title": "Penthouse Torre B - 2801", "type": "departamento", "description": "Penthouse de 4 dormitorios en último piso, terraza privada de 100m2, jacuzzi, vista 360°", "pricing": 950000, "view_type": "360", "floor_no": "28"}
+      ]
+    },
+    {
+      "name": "Villa Campestre Pachacámac",
+      "description": "Casas campestres en Pachacámac rodeadas de naturaleza. Ideal para familias que buscan tranquilidad fuera de la ciudad.",
+      "district": "Pachacámac",
+      "address": "Km 35 Antigua Panamericana Sur",
+      "reference": "Sector El Mirador de Pachacámac",
+      "details": "Condominio campestre de 20 hectáreas con 60 casas. Áreas de cultivo comunitario, criadero de animales de granja, laguna artificial, senderos ecológicos, club ecuestre.",
+      "video_url": "https://youtube.com/villa-pachacamac",
+      "brochure_url": "https://brochure.com/villa-pachacamac.pdf",
+      "includes_parking": true,
+      "has_showroom": false,
+      "properties": [
+        {"title": "Casa Campestre 8", "type": "casa_campo", "description": "Casa de 2 pisos, 250m2, 4 dormitorios, chimenea, terraza con vista a cerros, terreno de 800m2 con árboles frutales", "pricing": 450000, "view_type": "cerros", "floor_no": "N/A"},
+        {"title": "Casa Ecológica 22", "type": "casa_campo", "description": "Casa con paneles solares, 200m2, 3 dormitorios, biohuerto, sistema de riego tecnificado, terreno 600m2", "pricing": 380000, "view_type": "valle", "floor_no": "N/A"}
+      ]
+    },
+    {
+      "name": "Edificio Bellavista",
+      "description": "Departamentos económicos en Callao cerca al aeropuerto. Ideal para inversión en alquiler.",
+      "district": "Callao",
+      "address": "Av. Óscar R. Benavides 3500",
+      "reference": "A 10 min del Aeropuerto Jorge Chávez",
+      "details": "Edificio de 12 pisos con 96 departamentos. Ideal para ejecutivos que viajan constantemente o para alquiler tipo Airbnb. Shuttle al aeropuerto disponible.",
+      "video_url": "https://youtube.com/bellavista",
+      "brochure_url": "https://brochure.com/bellavista.pdf",
+      "includes_parking": true,
+      "has_showroom": false,
+      "properties": [
+        {"title": "Depto Compacto 804", "type": "departamento", "description": "Departamento de 1 dormitorio, 45m2, ideal para inversión o ejecutivos, amoblado opcional", "pricing": 110000, "view_type": "ciudad", "floor_no": "8"},
+        {"title": "Depto Doble 1105", "type": "departamento", "description": "Departamento de 2 dormitorios, 65m2, balcón, vista despejada", "pricing": 145000, "view_type": "despejada", "floor_no": "11"}
+      ]
+    },
+    {
+      "name": "Terrazas de Chorrillos",
+      "description": "Departamentos con vista al mar en Chorrillos. Precio accesible con financiamiento bancario disponible.",
+      "district": "Chorrillos",
+      "address": "Malecón Grau 850",
+      "reference": "Frente a Los Pantanos de Villa",
+      "details": "Edificio de 14 pisos frente al malecón. Terraza común en azotea con zona de parrillas y vista al mar. Ciclovía al frente. Bono Mivivienda disponible.",
+      "video_url": "https://youtube.com/terrazas-chorrillos",
+      "brochure_url": "https://brochure.com/terrazas.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Depto Vista Mar 603", "type": "departamento", "description": "Departamento de 2 dormitorios con vista directa al mar, balcón, acabados estándar", "pricing": 175000, "view_type": "mar", "floor_no": "6"},
+        {"title": "Depto Familiar 905", "type": "departamento", "description": "Departamento de 3 dormitorios, vista al mar y reserva natural, más iluminado", "pricing": 210000, "view_type": "mar_reserva", "floor_no": "9"}
+      ]
+    },
+    {
+      "name": "Business Hub Lima Centro",
+      "description": "Oficinas corporativas en el centro de Lima con infraestructura moderna para empresas.",
+      "district": "Cercado de Lima",
+      "address": "Jr. de la Unión 750",
+      "reference": "A 2 cuadras de la Plaza Mayor",
+      "details": "Edificio corporativo de 18 pisos completamente renovado. Ascensores de alta velocidad, aire acondicionado central, internet de fibra óptica, generador eléctrico de respaldo.",
+      "video_url": "https://youtube.com/business-hub",
+      "brochure_url": "https://brochure.com/business-hub.pdf",
+      "includes_parking": true,
+      "has_showroom": false,
+      "properties": [
+        {"title": "Oficina Pequeña 502", "type": "oficina", "description": "Oficina de 40m2, 1 ambiente con división móvil, baño privado, vista a Jr. de la Unión", "pricing": 95000, "view_type": "calle", "floor_no": "5"},
+        {"title": "Oficina Mediana 1003", "type": "oficina", "description": "Oficina de 90m2, 3 ambientes, sala de reuniones, kitchenette, 2 baños", "pricing": 210000, "view_type": "plaza", "floor_no": "10"},
+        {"title": "Piso Corporativo 15", "type": "oficina", "description": "Piso completo de 380m2, planta libre, 4 baños, terraza privada, ideal para call center o empresa grande", "pricing": 750000, "view_type": "panoramica", "floor_no": "15"}
+      ]
+    },
+    {
+      "name": "Condominio Los Portales",
+      "description": "Casas adosadas en Ate Vitarte con diseño moderno y funcional. Proyecto familiar con áreas comunes.",
+      "district": "Ate",
+      "address": "Av. Los Portales de Javier Prado 1250",
+      "reference": "Cerca al Mall Plaza Vitarte",
+      "details": "Condominio cerrado con 120 casas adosadas de 3 pisos. Parque central, losa multideportiva, zona de juegos, salón de eventos. Seguridad con garita de control.",
+      "video_url": "https://youtube.com/los-portales",
+      "brochure_url": "https://brochure.com/portales.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Casa Modelo Clásico 45", "type": "casa", "description": "Casa de 3 pisos, 120m2, 3 dormitorios, 2.5 baños, cochera doble, patio pequeño", "pricing": 215000, "view_type": "calle", "floor_no": "N/A"},
+        {"title": "Casa Modelo Plus 78", "type": "casa", "description": "Casa esquinera de 3 pisos, 140m2, 4 dormitorios, 3 baños, terraza en 3er piso", "pricing": 245000, "view_type": "parque", "floor_no": "N/A"}
+      ]
+    },
+    {
+      "name": "Park Residences",
+      "description": "Departamentos frente al Parque de la Reserva en Cercado de Lima. Ubicación céntrica con todos los servicios.",
+      "district": "Cercado de Lima",
+      "address": "Av. Arequipa 1580",
+      "reference": "Frente al Parque de la Reserva",
+      "details": "Edificio boutique de 16 pisos con solo 48 departamentos. Vista al Circuito Mágico del Agua. Acceso directo a Metropolitano. Pet-friendly con área de mascotas.",
+      "video_url": "https://youtube.com/park-residences",
+      "brochure_url": "https://brochure.com/park.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Depto Vista Parque 1202", "type": "departamento", "description": "Departamento de 2 dormitorios con balcón y vista directa al Parque de la Reserva, 85m2", "pricing": 265000, "view_type": "parque", "floor_no": "12"},
+        {"title": "Depto Esquinero 1505", "type": "departamento", "description": "Departamento esquinero de 3 dormitorios, más ventanas, doble iluminación, 110m2", "pricing": 340000, "view_type": "parque_ciudad", "floor_no": "15"}
+      ]
+    },
+    {
+      "name": "Playa Blanca - Punta Hermosa",
+      "description": "Casas de playa en Punta Hermosa para surfistas y amantes del mar. Diseño relajado estilo californiano.",
+      "district": "Punta Hermosa",
+      "address": "Km 42 Panamericana Sur",
+      "reference": "Frente a playa Punta Hermosa Norte",
+      "details": "Condominio playero con 40 casas de diseño contemporáneo. Acceso directo a playa de surf. Incluye bodega para tablas, duchas exteriores, zona de BBQ comunal.",
+      "video_url": "https://youtube.com/playa-blanca",
+      "brochure_url": "https://brochure.com/playa-blanca.pdf",
+      "includes_parking": true,
+      "has_showroom": false,
+      "properties": [
+        {"title": "Casa Surfista 12", "type": "casa_playa", "description": "Casa de 2 pisos, 3 dormitorios, terraza frontal con hamacas, 180m2, a 50m de la playa", "pricing": 420000, "view_type": "mar", "floor_no": "N/A"},
+        {"title": "Casa Familiar 28", "type": "casa_playa", "description": "Casa de 2 pisos, 4 dormitorios, quincho, jardín para mascotas, 220m2", "pricing": 550000, "view_type": "parcial_mar", "floor_no": "N/A"}
+      ]
+    },
+    {
+      "name": "Urban Suites Lince",
+      "description": "Suites compactas en Lince ideales para profesionales y estudiantes. Diseño eficiente y funcional.",
+      "district": "Lince",
+      "address": "Av. Arenales 1850",
+      "reference": "Entre Av. Petit Thouars y Av. Arequipa",
+      "details": "Edificio de 10 pisos con 70 suites de entre 25 y 40m2. Mobiliario modular incluido. Lavandería, gym 24/7, coworking con café. A 5 min del Metropolitano.",
+      "video_url": "https://youtube.com/urban-suites",
+      "brochure_url": "https://brochure.com/urban.pdf",
+      "includes_parking": false,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Suite Compacta 405", "type": "studio", "description": "Suite de 25m2 con cama rebatible, kitchenette, baño completo, escritorio plegable", "pricing": 85000, "view_type": "calle", "floor_no": "4"},
+        {"title": "Suite Plus 802", "type": "studio", "description": "Suite de 38m2 con división de ambientes, cocina completa, closet amplio", "pricing": 115000, "view_type": "ciudad", "floor_no": "8"}
+      ]
+    },
+    {
+      "name": "Alameda del Rímac",
+      "description": "Proyecto de renovación urbana en el Rímac. Departamentos modernos en zona histórica en proceso de recuperación.",
+      "district": "Rímac",
+      "address": "Jr. Trujillo 650",
+      "reference": "A 2 cuadras del Puente de Piedra",
+      "details": "Edificio nuevo de 8 pisos en zona de renovación urbana. Fachada que respeta arquitectura colonial. Cerca a nueva estación del Metro de Lima.",
+      "video_url": "https://youtube.com/alameda-rimac",
+      "brochure_url": "https://brochure.com/rimac.pdf",
+      "includes_parking": true,
+      "has_showroom": false,
+      "properties": [
+        {"title": "Depto Moderno 302", "type": "departamento", "description": "Departamento de 2 dormitorios, acabados contemporáneos, balcón, 70m2", "pricing": 140000, "view_type": "calle", "floor_no": "3"},
+        {"title": "Depto Amplio 605", "type": "departamento", "description": "Departamento de 3 dormitorios, sala-comedor grande, 95m2, doble vista", "pricing": 180000, "view_type": "ciudad", "floor_no": "6"}
+      ]
+    },
+    {
+      "name": "Colinas de Villa",
+      "description": "Casas en Chorrillos con vista panorámica a la ciudad. Zona residencial tranquila en las alturas.",
+      "district": "Chorrillos",
+      "address": "Calle Las Colinas 450",
+      "reference": "Zona Alta de Chorrillos, Urbanización Las Colinas",
+      "details": "Proyecto de 25 casas en la zona alta de Chorrillos con vista panorámica. Calles privadas, parque vecinal, vigilancia compartida. Clima privilegiado sin humedad.",
+      "video_url": "https://youtube.com/colinas-villa",
+      "brochure_url": "https://brochure.com/colinas.pdf",
+      "includes_parking": true,
+      "has_showroom": false,
+      "properties": [
+        {"title": "Casa Vista Panorámica 8", "type": "casa", "description": "Casa de 3 pisos, 4 dormitorios, terraza con vista a Lima, 200m2, jardín frontal", "pricing": 480000, "view_type": "panoramica", "floor_no": "N/A"},
+        {"title": "Casa Esquina 15", "type": "casa", "description": "Casa esquinera de 2 pisos, 3 dormitorios, garaje doble, jardín lateral, 170m2", "pricing": 390000, "view_type": "ciudad", "floor_no": "N/A"}
+      ]
+    },
+    {
+      "name": "Marina Bay",
+      "description": "Departamentos náuticos en la Costa Verde con marina privada. Estilo de vida frente al mar.",
+      "district": "San Isidro",
+      "address": "Malecón de la Marina 1000",
+      "reference": "Costa Verde, frente al mar",
+      "details": "Exclusivo proyecto de 6 torres frente al mar con marina privada para yates y veleros. Club náutico, restaurante gourmet, spa. Solo 120 unidades de lujo.",
+      "video_url": "https://youtube.com/marina-bay",
+      "brochure_url": "https://brochure.com/marina.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Depto Marina Torre A - 1205", "type": "departamento", "description": "Departamento de 3 dormitorios con vista frontal al mar y marina, 180m2, terraza de 40m2", "pricing": 980000, "view_type": "mar_marina", "floor_no": "12"},
+        {"title": "Penthouse Torre C - 1501", "type": "departamento", "description": "Penthouse de 4 dormitorios, piscina privada, vista 360° al mar, 350m2 + 120m2 terraza", "pricing": 2500000, "view_type": "360_mar", "floor_no": "15"}
+      ]
+    },
+    {
+      "name": "Green Valley Lurín",
+      "description": "Casas campestres ecológicas en Lurín con tecnología sostenible y cultivos orgánicos.",
+      "district": "Lurín",
+      "address": "Km 38 Antigua Panamericana Sur",
+      "reference": "Valle de Lurín, zona agrícola",
+      "details": "Eco-comunidad de 40 casas con paneles solares, biodigestores, sistema de captación de agua de lluvia. Huerto comunitario orgánico, granja de animales menores, vivero.",
+      "video_url": "https://youtube.com/green-valley",
+      "brochure_url": "https://brochure.com/green-valley.pdf",
+      "includes_parking": true,
+      "has_showroom": false,
+      "properties": [
+        {"title": "Casa Ecológica 5", "type": "casa_campo", "description": "Casa de 2 pisos con sistema solar completo, biohuerto de 100m2, compostaje, 180m2 construidos, terreno 1000m2", "pricing": 380000, "view_type": "valle", "floor_no": "N/A"},
+        {"title": "Casa Sustentable 18", "type": "casa_campo", "description": "Casa de adobe mejorado, 3 dormitorios, chimenea, establo para animales, 150m2, terreno 1200m2", "pricing": 320000, "view_type": "campo", "floor_no": "N/A"}
+      ]
+    },
+    {
+      "name": "Corporativo Jockey Plaza",
+      "description": "Oficinas premium junto al Jockey Plaza en Surco. Ubicación estratégica para empresas.",
+      "district": "Santiago de Surco",
+      "address": "Av. Javier Prado Este 4200",
+      "reference": "Al costado del Jockey Plaza",
+      "details": "Torre corporativa AAA de 20 pisos. Sistema de climatización inteligente, doble piso técnico, generación eléctrica de respaldo, 16 ascensores de alta velocidad. Food court en planta baja.",
+      "video_url": "https://youtube.com/corporativo-jockey",
+      "brochure_url": "https://brochure.com/jockey.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Oficina Boutique 805", "type": "oficina", "description": "Oficina de 65m2 con división de vidrio, sala de reuniones, kitchenette, baño privado", "pricing": 195000, "view_type": "ciudad", "floor_no": "8"},
+        {"title": "Oficina Corporativa 1402", "type": "oficina", "description": "Oficina de 150m2, planta libre, 3 baños, server room, vista panorámica", "pricing": 450000, "view_type": "panoramica", "floor_no": "14"},
+        {"title": "Piso Completo 18", "type": "oficina", "description": "Piso corporativo completo de 520m2, planta libre, terraza ejecutiva, 6 baños", "pricing": 1300000, "view_type": "360", "floor_no": "18"}
+      ]
+    },
+    {
+      "name": "Mirador de La Planicie",
+      "description": "Departamentos con vista panorámica en La Molina. Diseño moderno en zona de expansión.",
+      "district": "La Molina",
+      "address": "Av. La Planicie 750",
+      "reference": "Zona alta de La Molina",
+      "details": "Edificio de 12 pisos con vista panorámica a Lima. Roof garden, gimnasio, salón de juegos para niños, coworking. Cerca a colegios y universidades.",
+      "video_url": "https://youtube.com/mirador-planicie",
+      "brochure_url": "https://brochure.com/mirador.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Depto Vista Ciudad 805", "type": "departamento", "description": "Departamento de 3 dormitorios con vista panorámica a Lima, balcón amplio, 105m2", "pricing": 380000, "view_type": "panoramica", "floor_no": "8"},
+        {"title": "Depto Familiar 1003", "type": "departamento", "description": "Departamento de 4 dormitorios, sala de estar adicional, 2 balcones, 135m2", "pricing": 480000, "view_type": "ciudad_cerros", "floor_no": "10"}
+      ]
+    },
+    {
+      "name": "Plazuela San Francisco",
+      "description": "Departamentos históricos renovados en el Centro Histórico de Lima. Arquitectura colonial restaurada.",
+      "district": "Cercado de Lima",
+      "address": "Jr. Ancash 250",
+      "reference": "Frente al Convento de San Francisco",
+      "details": "Edificio republicano del siglo XIX completamente restaurado. Conserva fachada histórica con interiores modernos. Techos altos, balcones coloniales, pisos de madera noble.",
+      "video_url": "https://youtube.com/plazuela",
+      "brochure_url": "https://brochure.com/plazuela.pdf",
+      "includes_parking": false,
+      "has_showroom": false,
+      "properties": [
+        {"title": "Depto Colonial 201", "type": "departamento", "description": "Departamento de 2 dormitorios con balcón colonial, techos de 4m, pisos de madera restaurados, 90m2", "pricing": 280000, "view_type": "plazuela", "floor_no": "2"},
+        {"title": "Loft Histórico 301", "type": "loft", "description": "Loft estilo industrial-colonial, doble altura, mezanine, vigas de madera expuestas, 110m2", "pricing": 350000, "view_type": "catedral", "floor_no": "3"}
+      ]
+    },
+    {
+      "name": "Sunset Beach - Punta Negra",
+      "description": "Condominios frente al mar en Punta Negra. Perfectos para retiro y relax todo el año.",
+      "district": "Punta Negra",
+      "address": "Malecón Punta Negra 580",
+      "reference": "Frente a playa Punta Negra",
+      "details": "Complejo de 4 edificios de 6 pisos cada uno frente al mar. Piscinas compartidas, áreas verdes, acceso directo a la playa. Ideal para segunda vivienda o Airbnb.",
+      "video_url": "https://youtube.com/sunset-beach",
+      "brochure_url": "https://brochure.com/sunset.pdf",
+      "includes_parking": true,
+      "has_showroom": true,
+      "properties": [
+        {"title": "Depto Vista Mar 305", "type": "departamento", "description": "Departamento de 2 dormitorios con balcón corrido frente al mar, amoblado, 75m2", "pricing": 285000, "view_type": "mar", "floor_no": "3"},
+        {"title": "Depto Dúplex 601", "type": "departamento", "description": "Dúplex de 3 dormitorios con terraza en rooftop, parrilla, vista al atardecer, 120m2", "pricing": 420000, "view_type": "mar_atardecer", "floor_no": "6"}
+      ]
+    }
+  ]
+}

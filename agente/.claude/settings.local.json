@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.notion.so)",
+      "WebFetch(domain:platform.claude.com)",
+      "WebSearch"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
