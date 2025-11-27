@@ -422,11 +422,8 @@ app/
 ## 📝 Notas Importantes
 
 - **Haiku no soporta structured outputs** → Se usa Sonnet para backup también
-- **Helicone** como proxy para logging de Claude API (comentado por defecto)
 - **Cache control** reduce costos en prompts largos
 - **Disable parallel tool use** para mayor control de flujo
 - **Max 7 iteraciones** por conversación para prevenir loops infinitos
 
 ---
-
-**Desarrollado para Pascal Inmobiliaria**
