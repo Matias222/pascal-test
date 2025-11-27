@@ -67,10 +67,10 @@ async def carla(api_state:api_models.ApiState):
 
     for i in range(7):
         
-        print("8"*50)
-        print("Agente")
-        print(agente.messages)
-        print("8"*50)
+        #print("8"*50)
+        #print("Agente")
+        #print(agente.messages)
+        #print("8"*50)
         
         try:
             agente.timeout_seconds=45

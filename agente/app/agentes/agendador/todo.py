@@ -278,8 +278,8 @@ def usuario_prompt(api_state: api_models.ApiState):
     if api_state.conversa and api_state.conversa.most_recent_project_id:
         proyecto_contexto = f"""
 <proyecto_actual>
-El usuario está explorando el proyecto con ID: {api_state.conversa.most_recent_project_id}
-IMPORTANTE: Este proyecto puede ser el que el usuario quiere visitar.
+El usuario ha seleccionado el proyecto con ID: {api_state.conversa.most_recent_project_id}
+IMPORTANTE: Este proyecto ES EL QUE EL usuario quiere visitar.
 </proyecto_actual>"""
 
     # Prompt estático (se cachea con ephemeral)

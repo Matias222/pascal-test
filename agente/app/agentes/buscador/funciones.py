@@ -64,29 +64,66 @@ Returns: Lista de propiedades ordenadas por relevancia semántica.""",
         }
     },
     {
-        "name": "seleccionar_proyecto",
-        "description": """Registra el proyecto que el usuario ha seleccionado Y retorna TODAS las propiedades disponibles de ese proyecto.
+        "name": "obtener_informacion_proyecto",
+        "description": """Obtiene toda la información de un proyecto específico, incluyendo TODAS sus propiedades disponibles.
 
-CRÍTICO: Debes llamar a esta herramienta cuando:
-1. El usuario indica qué proyecto le interesa después de ver resultados
-2. Identificas automáticamente el proyecto de una propiedad específica que el usuario mencionó
-3. Quieres obtener toda la informacion de un proyecto!
+Usa esta herramienta cuando:
+1. El usuario quiere ver las propiedades de un proyecto específico
+2. El usuario pregunta "qué propiedades tiene el proyecto X?"
+3. Necesitas mostrar información detallada de un proyecto antes de que el usuario decida
 
 Esta herramienta:
-- Guarda el proyecto en el contexto de la conversación (most_recent_project_id)
-- Automáticamente obtiene TODAS las propiedades del proyecto
-- Retorna la lista completa de propiedades para que las presentes al usuario
+- Obtiene todas las propiedades del proyecto
+- Retorna información completa para presentar al usuario
+- NO modifica el contexto de la conversación (solo lectura)
 
-IMPORTANTE: Al presentar las propiedades, muestra 3-4 ejemplos destacados y menciona el total. Por ejemplo:
-"Perfecto! En el proyecto Ocean View hay 12 propiedades disponibles. Las más destacadas son:
-1. Depa 301 - 3 hab, 2 baños, $175,000
-2. Depa 502 - 3 hab, 2.5 baños, $189,000
-..."
+IMPORTANTE: Esta herramienta es solo para CONSULTAR información. Para marcar un proyecto como seleccionado, usa seleccionar_proyecto después.
 
 Ejemplos de uso:
-- Usuario: "Me interesa el proyecto Ocean View" → seleccionar_proyecto
-- Usuario: "Quiero ver más del primero" → seleccionar_proyecto con el ID del primer proyecto
-- Sistema detecta que propiedad X pertenece a proyecto Y → seleccionar_proyecto automático""",
+- Usuario: "Qué propiedades tiene el Ocean View?" → obtener_informacion_proyecto
+- Usuario: "Muéstrame las unidades del primer proyecto" → obtener_informacion_proyecto
+- Usuario: "Cuánto cuestan los depas del Sky Tower?" → obtener_informacion_proyecto""",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "proyecto_id": {
+                    "type": "string",
+                    "description": "ID del proyecto (UUID)"
+                },
+                "proyecto_nombre": {
+                    "type": "string",
+                    "description": "Nombre del proyecto para referencia"
+                }
+            },
+            "required": ["proyecto_id", "proyecto_nombre"]
+        }
+    },
+    {
+        "name": "seleccionar_proyecto",
+        "description": """MARCA un proyecto como SELECCIONADO en el contexto de la conversación.
+
+CRÍTICO: Esta herramienta es OBLIGATORIA antes de que el usuario pueda pasar al agente AGENDADOR.
+
+Usa esta herramienta cuando:
+1. El usuario confirma que quiere ese proyecto ("me interesa", "quiero ese", "vamos con el Ocean View")
+2. El usuario está listo para agendar una visita a un proyecto específico
+3. El usuario ha visto las propiedades y decidió que le gusta el proyecto
+
+Esta herramienta:
+- Guarda el proyecto_id en el contexto (most_recent_project_id)
+- NO retorna propiedades (usa obtener_informacion_proyecto para eso)
+- Es un paso de confirmación/selección
+
+FLUJO CORRECTO:
+1. Mostrar proyectos → busqueda_semantica_proyectos
+2. Usuario elige uno → obtener_informacion_proyecto (para ver propiedades)
+3. Usuario confirma interés → seleccionar_proyecto (marcar como seleccionado)
+4. Usuario quiere agendar → cambiar_flujo_agente a AGENDADOR
+
+Ejemplos de uso:
+- Usuario: "Me interesa el Ocean View, quiero agendar" → seleccionar_proyecto + cambiar_flujo_agente
+- Usuario: "Sí, vamos con ese proyecto" → seleccionar_proyecto
+- Usuario: "Perfecto, ese me gusta" → seleccionar_proyecto""",
         "input_schema": {
             "type": "object",
             "properties": {
@@ -249,33 +286,51 @@ async def ejecucion(api_state: api_models.ApiState, agente: agent_models.Agente,
                 "mensaje": f"Error en búsqueda de propiedades (status: {propiedades_status})"
             }, ensure_ascii=False)
 
-    elif tool_name == "seleccionar_proyecto":
+    elif tool_name == "obtener_informacion_proyecto":
 
         proyecto_id = function_args.get("proyecto_id")
         proyecto_nombre = function_args.get("proyecto_nombre")
 
-        api_state.conversa.most_recent_project_id = proyecto_id
-
         propiedades_data, propiedades_status = await busquedas.obtener_propiedades_por_proyecto(proyecto_id)
 
         if propiedades_status == 200:
+            print(f"Propiedades encontradas para {proyecto_nombre}: {len(propiedades_data)}")
+
             response = json.dumps({
                 "status": "success",
                 "proyecto_id": proyecto_id,
                 "proyecto_nombre": proyecto_nombre,
                 "total_propiedades": len(propiedades_data),
                 "propiedades": propiedades_data,
-                "mensaje": f"Proyecto '{proyecto_nombre}' seleccionado. Presenta al usuario las {len(propiedades_data)} propiedades disponibles mostrando 3-4 ejemplos destacados."
+                "mensaje": f"Información del proyecto '{proyecto_nombre}' obtenida. Presenta las {len(propiedades_data)} propiedades al usuario mostrando 3-4 ejemplos destacados. IMPORTANTE: Si el usuario confirma interés en este proyecto, debes usar seleccionar_proyecto antes de cambiar a AGENDADOR."
             }, ensure_ascii=False)
         else:
+            print(f"Error al obtener propiedades: {propiedades_status}")
             response = json.dumps({
-                "status": "partial_success",
+                "status": "error",
                 "proyecto_id": proyecto_id,
                 "proyecto_nombre": proyecto_nombre,
                 "total_propiedades": 0,
                 "propiedades": [],
-                "mensaje": f"Proyecto '{proyecto_nombre}' seleccionado, pero no se encontraron propiedades disponibles en este momento."
+                "mensaje": f"No se pudieron obtener las propiedades del proyecto '{proyecto_nombre}' en este momento."
             }, ensure_ascii=False)
+
+    elif tool_name == "seleccionar_proyecto":
+
+        proyecto_id = function_args.get("proyecto_id")
+        proyecto_nombre = function_args.get("proyecto_nombre")
+
+        # SOLO setea el proyecto_id en el contexto, NO obtiene propiedades
+        api_state.conversa.most_recent_project_id = proyecto_id
+
+        print(f"✅ Proyecto '{proyecto_nombre}' SELECCIONADO (ID: {proyecto_id})")
+
+        response = json.dumps({
+            "status": "success",
+            "proyecto_id": proyecto_id,
+            "proyecto_nombre": proyecto_nombre,
+            "mensaje": f"Proyecto '{proyecto_nombre}' ha sido marcado como seleccionado. El usuario ahora puede pasar al agente AGENDADOR para programar su visita."
+        }, ensure_ascii=False)
 
     elif tool_name == "filtrar_propiedades":
         # Filtrado de propiedades por criterios
